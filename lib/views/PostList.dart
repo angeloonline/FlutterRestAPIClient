@@ -115,7 +115,7 @@ class MyBodyLayout extends StatefulWidget{
                               background: _dismissBackgoundContainer(),
                               // card containing Post infos
                               child: Container(
-                                padding: EdgeInsets.all(8.0),
+                                padding: EdgeInsets.all(5.0),
                                 child: ListTile(                                  
                                   leading: CircleAvatar(
                                     child: Icon(Icons.event_note)
@@ -128,7 +128,7 @@ class MyBodyLayout extends StatefulWidget{
                                     _navigateToPostView(snapshot.data[index].id);   
                                   },
                                   onLongPress: (){
-                                    print('On long press -> remove item: ${snapshot.data[index]}');
+                                    print('On long press -> remove item: ${snapshot.data[index].id}');
                                   }
                               ))
                             );
